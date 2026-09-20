@@ -2,7 +2,7 @@ import { createContext, useContext, type ReactNode } from 'react';
 import useSWR from 'swr';
 import { fetcher } from '@/lib/utils';
 
-export const DEFAULT_GREETING = 'What would you like to know?';
+export const DEFAULT_GREETING = 'How can we help you today?';
 
 interface ConfigResponse {
   features: {

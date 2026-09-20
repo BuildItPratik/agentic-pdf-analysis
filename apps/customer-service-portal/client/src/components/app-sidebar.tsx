@@ -49,10 +49,31 @@ export function AppSidebar({
           <Link
             to="/"
             onClick={() => setOpenMobile(false)}
-            className="flex items-center overflow-hidden px-1"
+            className="flex items-center gap-2 overflow-hidden px-1"
           >
+            <div
+              className="flex size-7 items-center justify-center rounded-lg shadow-sm"
+              style={{
+                background: 'linear-gradient(135deg, #2272b4 0%, #2db0a0 50%, #9b6ae8 100%)',
+              }}
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                <path d="M21 19a2 2 0 0 1-2 2h-1v-7h3z" />
+                <path d="M3 19a2 2 0 0 0 2 2h1v-7H3z" />
+              </svg>
+            </div>
             <span className="text-base font-semibold text-foreground">
-              Chatbot
+              Customer Service
             </span>
           </Link>
         )}
